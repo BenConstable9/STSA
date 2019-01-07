@@ -1,0 +1,35 @@
+#banner {
+    background-image: url('../images/nqt.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#banner_wrapper {
+    margin-top: 100px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.5);
+}
+
+#banner_wrapper .lead {
+    font-size: 26px;
+}
+
+#banner_wrapper .display-4 {
+    font-weight: 400;
+}
+
+@media (max-width: 769px) {
+    #banner {
+        height: 525px;
+    }
+    
+    #banner_wrapper {
+        margin-top: 25px;
+    }
+}
