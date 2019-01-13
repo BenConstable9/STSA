@@ -1,10 +1,15 @@
 #banner {
-    background-image: url('../images/nqt.jpg');
+    background-image: url('../images/chemistry.jpg');
     background-repeat: no-repeat, no-repeat;
     background-color: #cccccc;
     background-position: center;
     background-size: cover;
     height: 500px;
+    text-align: center;
+    margin-bottom: 0px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: relative;
 }
 
 #banner_wrapper {
@@ -24,12 +29,48 @@
     font-weight: 400;
 }
 
-@media (max-width: 769px) {
+#banner_logo {
+    margin-top: 50px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    position: absolute;
+    top: 110px;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+}
+
+@media (max-width: 992px) {
     #banner {
-        height: 525px;
+        height: 400px;
+    }
+    
+    #banner_logo {
+        width: 60%;
+        top: 130px;
+        left: 20%;
+        right: 20%;
     }
     
     #banner_wrapper {
-        margin-top: 25px;
+        margin-top: 25px; 
+    }
+}
+
+@media (max-width: 769px) {
+    #banner {
+        height: 150px;
+    }
+    
+    #banner_logo {
+        width: 70%;
+        max-height: 100px;
+        top: 40px;
+        left: 15%;
+        right: 15%;
+    }
+    
+    #banner_wrapper {
+        margin-top: 25px; 
     }
 }
