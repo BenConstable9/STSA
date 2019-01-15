@@ -8,10 +8,10 @@
     height: 80px;
     font-size: 24px;
     padding: 10px;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -ms-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .header_collapsed {
@@ -60,10 +60,10 @@
         padding: 5px 0px 0px 0px;
         left: 0px;
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-        -webkit-transition: all 1s linear;
-        -moz-transition: all 1s linear;
-        -ms-transition: all 1s linear;
-        transition: all 1s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        transition: all 0.5s linear;
     }
     
     .header .items {
@@ -129,10 +129,10 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        -webkit-transition: all 1s linear;
-        -moz-transition: all 1s linear;
-        -ms-transition: all 1s linear;
-        transition: all 1s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        transition: all 0.5s linear;
     }
 
     .header_collapsed #menu {
@@ -166,7 +166,7 @@
 }
 
 #banner_logo {
-    width: 60%;
+    width: 45%;
 }
 
 @media (min-width: 769px) {
@@ -181,8 +181,9 @@
     padding: 25px;
     color: #fff;
     text-align: center;
-    background-color: #71cd9d;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2)
+    background-color: #48a890;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
 }
 
 #title_wrapper p {
@@ -197,14 +198,6 @@
 #sub-title {
     font-weight: 500;
     font-size: 2em;
-}
-
-#strap {
-    font-size: 1.2em;
-    margin-bottom: 0px;
-    font-weight: 400;
-    font-style: italic;
-    text-transform: uppercase;
 }
 
 @media (max-width: 769px) {
@@ -222,18 +215,19 @@
     padding-top: 54px;
 }
 
-.text {
-    margin-top: 25px;
-}
-
 .text .container {
     margin-bottom: 0px;
     padding-bottom: 5px;
+}
+
+.text p {
+    font-size: 18px;
     text-align: justify;
 }
 
 .text h4 {
     color: #2C7BBE;
+    font-weight: 700;
 }
 
 /* Horizontal Rule */
@@ -270,13 +264,14 @@
 .link_button:hover {
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
-    border-width: 3px;
+    font-weight: 700;
+    border-width: 5px;
+    box-shadow: inset 0 0 0 3000px rgba(72,168,144,0.9);
 }
 
 /* Image Link Grid */
 .links {
-    padding: 0px 25px 50px 25px;
+    padding: 0px 25px 16px 25px;
     text-align: center;
     margin-top: 0px;
 }
@@ -296,13 +291,18 @@
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-    -webkit-filter: grayscale(0.9);
-    filter: grayscale(0.9);
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
 }
 .link_wrapper:hover .img_holder {
     transform: scale(1.2);
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+}
+.link_wrapper:hover .img_label a {
+    color: #fff;
+    border-color: #fff;
+    box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.5);
 }
 .img_label {
     position: absolute;
@@ -312,13 +312,19 @@
     width: 100%;
 }
 .img_label a {
-    color: #fff;
+    color: mintcream;
     padding: 7px 40px 7px 40px;
-    border-color: #fff;
-    box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.7);
+    border-color: mintcream;
+    font-weight: 400;
+    box-shadow: inset 0 0 0 3000px rgba(72,168,144,0.9);
 }
 .img_label a:hover {
     text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-color: #fff;
+    box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.5);
+    border-width: 3px;
 }
 
 /* Footer */
@@ -331,11 +337,12 @@
     margin-bottom: 0px;
 }
 #upper_footer {
-    background-color: #94DAB6;
+    background-color: #6bc0ab;
     padding: 50px;
+    margin-top: 20px;
 }
 
 #lower_footer {
-    background-color: #71cd9d;
+    background-color: #48a890;
     font-size: 14px;
 }
