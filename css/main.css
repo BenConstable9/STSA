@@ -396,6 +396,36 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
     font-size: 18px;
 }
 
+.static_image_link_lg img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+.table_even_3 td {
+    width: 33%;
+}
+@media screen and (max-width: 750px) {
+    .table_mobile {
+        width:100%;
+    }
+    .table_mobile thead {
+        display: none;
+    }
+    .table_mobile tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    .table_mobile tr td:first-child {
+        background: rgb(230, 230, 230); 
+        font-weight: bold;
+        font-size: 15.4px;
+    }
+    .table_mobile tbody td {
+        display: block;
+        text-align:center;
+    }
+}
+
 /* Footer */
 .footer {
     padding: 25px;
