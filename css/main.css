@@ -409,6 +409,9 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
     .table_mobile {
         width:100%;
     }
+    .table_even_3 td {
+        width: 100%;
+    }
     .table_mobile thead {
         display: none;
     }
