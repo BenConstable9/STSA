@@ -66,6 +66,7 @@
         -moz-transition: all 0.5s linear;
         -ms-transition: all 0.5s linear;
         transition: all 0.5s linear;
+        z-index: 100;
     }
     
     .header .items {
@@ -107,6 +108,7 @@
     
     #menu_close {
         display: none;
+        z-index: 100;
     }
 }
 
@@ -267,6 +269,14 @@
     font-weight: 500;
 }
 
+.text ul li, .text ol li {
+    font-size: 18px;
+}
+
+.table ul li {
+    font-size: 16px;
+}
+
 /*
 .text img {
     width: 100%;
@@ -399,6 +409,16 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
 .static_image_link_lg img {
     width: 100%;
     margin-bottom: 15px;
+}
+
+/* Profile Picture */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 180px;
+    height: auto;
 }
 
 /* Tables */
