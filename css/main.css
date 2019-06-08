@@ -145,6 +145,10 @@
         right: 140px;
         top: 10%;
     }
+    
+    .social {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 992px) {
