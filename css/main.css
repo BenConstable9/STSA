@@ -490,6 +490,11 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
     }
 }
 
+/* Reset the style of li */
+.table_odd_2 ol li {
+    font-size: 16px;
+}
+
 /* Footer */
 .footer {
     padding: 25px;
