@@ -435,7 +435,7 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
     .table_mobile {
         width:100%;
     }
-    .table_even_3 td, .table_even_2 td {
+    .table_even_3 td, .table_even_2, .table_odd_2 td {
         width: 100%;
     }
     .table_mobile thead {
@@ -469,7 +469,7 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
         width: 33%;
     }
     
-    .table_odd_3 td:nth-of-type(1), .table_odd_3 td:nth-of-type(2) {
+    .table_odd_3 td:nth-of-type(1), .table_odd_3 td:nth-of-type(2), .table_odd_2 td:nth-of-type(1) {
         width: 25%;
     }
     
@@ -479,6 +479,10 @@ a.link_two, a.link_two:hover, a.link_three, a.link_three:hover {
 
     .table_even_2 td {
         width: 50%;
+    }
+    
+    .table_odd_2 td:nth-of-type(2) {
+        width: 75%;
     }
     
     .table_header_shaded thead {
